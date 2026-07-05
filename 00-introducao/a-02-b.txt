@@ -1,0 +1,41 @@
+Sobre
+
+idea do long chain é simplificar integração com LLMs e serviços auxiliares
+ex: carregamento de dados, memória, busca por documentos, agentes, roteadores
+
+para utilizar múltiplos agentes que facilitam gerenciar vários chain é necessário usar + outros frameworks por exemplo lang graph ou outra plataforma;
+
+chains = formas de criar fluxos do que eu to fazendo
+
+naturalmente foi sendo separado em pacotes que possui muitas dependências
+- langchain-core, langchain (implementação de prefência)
+- langchain-community (integrações extras)
+- pacotes de terceiros
+
+
+Principais recursos
+
+- Criações de chains: fluxos de execução compostos por etapas, algo runnable, algo que é possível ser invocado; Cada etapa pode chamar modelos, processar dados, etc.
+
+- LangChain Expressio Language (LCEL): Realiza operações utilizando "pipe" | para compor runnables
+
+- Carregamento e divisão de documentos (splitter, para que documentos tenham pedaços menores pra utilizar, guardar, manda pra IA, ou tanto faz): Consegue carregar csvs, json, html, markdown, site. (evita o trabalho de ter que implementar um loader pra cada tipo de arquivo)
+
+- Modelos de embedding e armazenamento vetorial: transformar conteúdo em vetor, em modelo matemático. Possível salvar em bancos de dados vetorias para fazer buscas semânticas (Pinecode, PGVector[postgres], Weaviate, FAISS)
+
+- Vantagens de não entrar no baixo nível pra manipulação em bancos de dados vetoriais;
+
+- Busca por similaridade em bancos vetoriais
+
+- Agentes e Ferramentas: Agentes usam a LLM para processar a entrada e conseguem decidir quais ações/ ferramentas executar
+
+- Memória e histórico confome interagi com IA
+
+- Prompt templates e placeholders: deixar template prompt para ir substituindo os placeholder e variáveis que foram definidas neles
+
+- OutputParsing e Pydantic
+
+- Sumarização, utilizando map-reduce - porque as conversas vão ficando grande e
+talvez não queiramos enviar tanta informação
+
+

@@ -1,0 +1,33 @@
+# Lang Chain 
+criado em 2022
+abril 2023 gerou uma start LangChain
+
+Lang Smith é plataforma da Lang Chain focada em observabilidade
+
+LangGraph Platform = faz parte do ecosistema da Lang Chain, projeto para criação e orquestração de agentes de forma bem determinística.
+
+# Ecossitema de serviços
+
+Lang Smith plataforma online e paga, gratuito com limites
+Foca em observabilidade e debuggin de aplicaçãoes
+Monitorar aplicações em prod
+Performance dos modelos que trabalho
+Gerencia custos e latência dos modelos
+
+LangServe* Hosted
+- Plataforma para deploy de aplicações LangChain
+- Com infra gerenciada e escalabilidade
+'
+LangGraph Platform
+- Framework para gerenciamento e orquestração de agentes de infra
+- Quando tenho agentes autonomos com grafos e autônomos
+- Agentes com longa duração e memória
+- gerenciamento de workflows completos
+
+LangGraph Studio
+- Interface para gerenciamento de projeto LangGraph
+
+LangChain Hub
+- catálogo onde se publica, versiona, testa e baixa pormpts e outros artefatos
+- faz parte do lang smith, com playground e sdk para pull/push
+

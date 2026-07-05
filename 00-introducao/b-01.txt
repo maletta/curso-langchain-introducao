@@ -1,0 +1,11 @@
+# comandos iniciar ambiente
+
+python -m venv .venv // configura venv com python ativo no sistema
+
+source .venv/bin/activate // ativa venv configurada no projeto
+
+deactivate // sai do venv
+
+pip install langchain langchain-openai langchain-google-genai python-dotenv beautifulsoup4 pypdf 
+
+pip freeze > requirements.txt // joga as deps dentro de um arquivo
