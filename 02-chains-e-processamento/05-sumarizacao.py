@@ -131,3 +131,5 @@ print(
     f"[MAP_REDUCE] — {len(chunks)+1} chamadas à API, texto dividido em {len(chunks)} partes:"
 )
 print(f"  {final_summary[:100]}...")
+
+# MAP_REDUCE não é uma escolha, é uma necessidade quando STUFF não pode ser utilizado. MAP_REDUCE é útil quando o texto é grande demais para caber na janela de contexto do modelo.
