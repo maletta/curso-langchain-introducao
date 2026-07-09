@@ -1,4 +1,4 @@
-Os LLM's são stateless, ou seja, não guardão em memória o que foi solicitado e que foi gerado em uma requisição
+Os LLM's são stateless, ou seja, não guardam em memória o que foi solicitado e que foi gerado em uma requisição
 
 Então a próxima requisição não conterá os dados de input ou output de uma outra requisição já feita, para contornar a situação então sempre enviamos para as LLM's os dados anteriores de outras requisições para que não percamos o contexto da conversa, temos que ser repetitivos e "falar de novo" o que tá acontecendo.
 
