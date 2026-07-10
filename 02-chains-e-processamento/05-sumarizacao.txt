@@ -18,4 +18,4 @@ Se o contexto que eu envio (quantidade tokens que envio) for aumentando, então 
 
  Foi levantada outra reflexão, se estamos atendendo um cliente e queremos enviar todo o histórico de conversa do atendimento. Se temos histórico de 4 anos de conversas que aconteceram a quatro anos atrás. Talvez ele não tenha a necessidade de ser atendido por questões tão antigas e o foco pode estar nas conversas mais atuais. Então talvez possamos sumarizar as conversas mais antigas (perdendo algumas palavras) e talvez enviar as conversas mais recentes integralmente; Na intenção de economizar em processamento, latência e custo.
 
- -- Se atinge o máximo do limite de contexto então e preciso de estratégias como truncar, sumarizar (map-reduce), ou usar bancos vetoriais para buscar só o relevante.
+ -- Se atinge o máximo do limite de contexto então e preciso de estratégias como truncar, sumarizar partes separadas (map-reduce), ou usar bancos vetoriais para buscar só o relevante.

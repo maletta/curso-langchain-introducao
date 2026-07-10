@@ -8,7 +8,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
 
-# Texto de exemplo — pequeno, mas vamos simular um cenário real de map_reduce
+# Texto de exemplo — pequeno, mas vamos simular um cenário real
 long_text = """
 The midnight oil has burned to ash and grey,
 As silent shadows stretch across the floor.
@@ -49,7 +49,8 @@ llm = ChatOpenAI(
 
 # ═══════════════════════════════════════════════════════════════
 # ESTRATÉGIA 1: STUFF — texto inteiro de uma vez
-# Útil quando o texto cabe na janela de contexto
+# Útil quando o texto cabe na janela de contexto, tender a ser mais
+# preciso, rápido e barato
 # ═══════════════════════════════════════════════════════════════
 
 print(f"\n{'='*50}")
