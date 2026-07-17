@@ -19,7 +19,7 @@ def calculator(expression: str) -> str:
     Use this for any mathematical calculation.
     """
     try:
-        result = eval(expression)  # cuidado: apenas para exemplo didático
+        result = eval(expression)
     except Exception as e:
         return f"Error: {e}"
     return str(result)
@@ -89,11 +89,10 @@ print(f"\n{sep} Teste 1: Capital de país {sep}")
 result = agent.invoke(
     {"messages": [{"role": "user", "content": "What is the capital of France?"}]}
 )
-print(f"\n{sep} Pensamento {sep}")
+print(f"\n{sep} Histórico de mensagens {sep}")
 for i, msg in enumerate(result["messages"]):
-    print(f"[{i}] {msg.type}: {msg.content[:80]}...")
-
-print(result["messages"][-1].content)
+    print(f"[{i}] {msg.type}: {str(msg.content)[:100]}...")
+print(f"\n✅ Resposta final: {result['messages'][-1].content}")
 print(f"\n{sep*2}")
 
 # Segunda pergunta: cálculo matemático
@@ -101,8 +100,7 @@ print(f"\n{sep} Teste 2: Cálculo matemático {sep}")
 result = agent.invoke(
     {"messages": [{"role": "user", "content": "How much is 10 * 10?"}]}
 )
-print(f"\n{sep} Pensamento {sep}")
+print(f"\n{sep} Histórico de mensagens {sep}")
 for i, msg in enumerate(result["messages"]):
-    print(f"[{i}] {msg.type}: {msg.content[:80]}...")
-
-print(result["messages"][-1].content)
+    print(f"[{i}] {msg.type}: {str(msg.content)[:100]}...")
+print(f"\n✅ Resposta final: {result['messages'][-1].content}")
